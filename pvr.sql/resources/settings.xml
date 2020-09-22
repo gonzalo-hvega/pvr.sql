@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <!-- M3U -->
+  <category label="30000">
+    <setting id="m3u.general" label="30000" type="lsep"/> 
+    <setting id="m3u.path.type" type="enum" label="30001" lvalues="30002|30003" default="1"/>
+    <setting id="m3u.path" type="file" label="30004" default="" visible="eq(-1,0)"/>
+    <setting id="m3u.url" type="text" label="30005" default="" visible="eq(-2,1)"/>
+    <setting id="m3u.cache" type="bool" label="30006" default="true" visible="eq(-3,1)"/>
+    <setting id="m3u.startnum" type="number" label="30007" default="1"/>
+    <setting id="m3u.refresh" type="enum" label="30008" default="0" lvalues="30009|30010|30011"/>
+    <setting id="m3u.filter" type="bool" label="30012" default="false"/>
+  </category>
+
+  <!-- EPG -->
+  <category label="30100">
+    <setting id="epg.general" label="30100" type="lsep"/>
+    <setting id="epg.path.type" type="enum" label="30101" lvalues="30102|30103" default="1"/>
+    <setting id="epg.path" type="file" label="30104" default="" visible="eq(-1,0)"/>
+    <setting id="epg.url" type="text" label="30105" default="" visible="eq(-2,1)"/>
+    <setting id="epg.cache" type="bool" label="30106" default="true" visible="eq(-3,1)"/>
+    <setting id="epg.time.shift" type="slider" label="30107" default="0" range="-12,.5,12" option="float"/>
+    <setting id="epg.refresh" type="enum" label="30108" default="0" lvalues="30109|30110|30111"/>
+    <setting id="epg.ts.override" type="bool" label="30112" default="false"/>
+  </category>
+
+  <!-- Logos -->
+  <category label="30200">
+    <setting id="logo.general" label="30200" type="lsep"/>
+    <setting id="logo.path.type" type="enum" label="30201" lvalues="30202|30203" default="1"/>
+    <setting id="logo.path" type="folder" label="30204" default="" visible="eq(-1,0)"/>
+    <setting id="logo.base.url" type="text" label="30205" default="" visible="eq(-2,1)"/>
+    <setting id="logo.general" label="30206" type="lsep"/>
+    <setting id="logo.from.epg" type="enum" label="30207" default="0" lvalues="30208|30209|30210"/>
+  </category>
+  
+  <!-- DVR -->
+  <category label="30300">
+    <setting id="dvr.general" label="30300" type="lsep"/>
+    <setting id="dvr.path" label="30301" type="folder"/>
+    <setting id="dvr.poll" type="slider" label="30302" default="10" range="0,1,20" option="int"/>
+    <setting id="dvr.mode" type="enum" label="30303" lvalues="30304|30305" default="0"/>
+    <setting id="dvr.ip" label="30306" type="text" default="127.0.0.1"/>
+    <setting id="dvr.port" label="30307" type="number" default="3000"/>
+    <setting id="dvr.general" label="30308" type="lsep"/>
+    <setting id="dvr.ffmpeg.path" label="30309" type="file" visible="eq(-4,1)"/>
+    <setting id="dvr.ffmpeg.params" label="30310" type="text" default="-c:v libx264 -c:a aac" visible="eq(-5,1)"/>
+    <setting id="dvr.file.ext" label="30311" type="text" default="flv" visible="eq(-6,1)"/>
+    <setting id="dvr.stream.timeout" label="30312" type="number" default="60" visible="eq(-7,1)"/>
+    <setting id="dvr.stream.quality" type="enum" label="30313" lvalues="30314|30315" default="1" visible="eq(-8,1)"/>
+  </category>
+</settings>

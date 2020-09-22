@@ -1,0 +1,5 @@
+v1.0.0
+- Initial version
+- Supports M3U as Live TV streams source and XMLTV as EPG source
+- Supports Live TV, Radio channels and EPG
+- Supports DVR Timers, and Recordings via FFMPEG
