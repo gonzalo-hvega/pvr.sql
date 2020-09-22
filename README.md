@@ -1,5 +1,5 @@
-# pvr.sql
-Kodi's Television SQL Client/Server Addon
+# Kodi's Internet Protocol Television SQL Client Addon w/ Recording Support
+IPTV Live TV and Radio PVR Client Addon for [Kodi] (http://kodi.tv)
 
 ## Build instructions
 
