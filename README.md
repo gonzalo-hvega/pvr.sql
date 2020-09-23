@@ -18,7 +18,7 @@ Coming Soon.
 * [PVR SQL Discord Page] (https://discord.gg/n83a83V)
 * [FFmpeg Binaries w/ Codecs, ARM] (https://johnvansickle.com/ffmpeg/)
 
-##### Gonzalo Vega (gonzalo-hvega) modification
+##### Gonzalo Vega (gonzalo-hvega) Programmer
 
 ##### Features
 1. Time Shifting Support
@@ -32,7 +32,7 @@ Coming Soon.
 ##### Requirements
 1. FFMPEG Binary for System
 
-##### Tested with
+##### Tested
 1. Ubuntu 16.04 LTS
 2. Windows 10 (64-bit)
 3. Windows 10 (32-bit)
