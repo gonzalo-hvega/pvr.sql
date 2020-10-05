@@ -1460,6 +1460,10 @@ void SQLConnection::ImportXMLTV(void)
 		strTvgName =                                                                   EPG_CHANNEL_NO_NAME        ;
 		strTvgLogo = GetXMLChildAttributeValue(pChannelNode, XMLTV_ICON_MARKER       , XMLTV_SOURCE_MARKER,    ""); 
 		
+		// skip entries with no tvg-id
+		if (strTvgId == "")
+			continue;
+		
 		// add unique
 		if (!FindRecord("EpgChannels", "strTvgId", strTvgId.c_str(), sqlEpgChannel))
 		{
