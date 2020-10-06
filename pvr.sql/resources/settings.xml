@@ -44,7 +44,7 @@
     <setting id="dvr.port" label="30307" type="number" default="3000"/>
     <setting id="dvr.general" label="30308" type="lsep"/>
     <setting id="dvr.ffmpeg.path" label="30309" type="file" visible="eq(-4,1)"/>
-    <setting id="dvr.ffmpeg.params" label="30310" type="text" default="-c:v libx264 -c:a aac" visible="eq(-5,1)"/>
+    <setting id="dvr.ffmpeg.params" label="30310" type="text" default="-c:v copy -c:a aac" visible="eq(-5,1)"/>
     <setting id="dvr.file.ext" label="30311" type="text" default="flv" visible="eq(-6,1)"/>
     <setting id="dvr.stream.timeout" label="30312" type="number" default="60" visible="eq(-7,1)"/>
     <setting id="dvr.stream.quality" type="enum" label="30313" lvalues="30314|30315" default="1" visible="eq(-8,1)"/>
