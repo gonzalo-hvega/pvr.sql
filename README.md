@@ -31,6 +31,7 @@ Coming Soon.
 
 ##### Requirements
 1. FFMPEG Binary for System
+2. Only FLV Container is Supported ATM
 
 ##### Tested
 1. Ubuntu 16.04 LTS
